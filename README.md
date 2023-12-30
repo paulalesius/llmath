@@ -1,6 +1,6 @@
 # Large Language Math - The Mathematics of LLM Foundational Models - For Beginners
 
-![Large Language Math - The Mathematics of LLM Foundational Models](/cover.png)
+![Large Language Math - The Mathematics of LLM Foundational Models](src/cover.png)
 
 ## Mission Statement
 The llmath project is dedicated to demystifying the complex mathematics underpinning Large Language Models (LLM). Our goal is to empower beginners with the necessary mathematical skills and knowledge to contribute to the development of this alien intelligence. We believe in the power of collaboration and open learning to advance our understanding of LLMs.
