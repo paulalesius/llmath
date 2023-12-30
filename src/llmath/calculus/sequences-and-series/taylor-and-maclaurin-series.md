@@ -1,1 +1,0 @@
-# taylor-and-maclaurin-series

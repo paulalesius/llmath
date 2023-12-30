@@ -1,1 +1,0 @@
-# multivariable-calculus

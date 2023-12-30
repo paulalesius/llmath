@@ -1,1 +1,0 @@
-# geometric-sequences

@@ -1,1 +1,0 @@
-# definite-integrals

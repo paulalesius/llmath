@@ -1,1 +1,0 @@
-# solving-simple-inequalities

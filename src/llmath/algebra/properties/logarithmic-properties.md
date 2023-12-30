@@ -1,1 +1,0 @@
-# logarithmic-properties

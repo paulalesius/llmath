@@ -93,12 +93,3 @@ llmath:calculus:multivariable-calculus:vector-calculus
 llmath:calculus:practical-applications
 llmath:calculus:practical-applications:real-world-applications
 llmath:calculus:practical-applications:using-r-for-calculus
-llmath:algebra:concepts
-llmath:algebra:concepts:variables
-llmath:algebra:concepts:constants
-llmath:algebra:concepts:expressions
-llmath:algebra:concepts:expressions-and-operators
-llmath:algebra:concepts:addition
-llmath:algebra:concepts:subtraction
-llmath:algebra:concepts:multiplication
-llmath:algebra:concepts:division

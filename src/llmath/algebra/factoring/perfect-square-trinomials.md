@@ -1,1 +1,0 @@
-# perfect-square-trinomials

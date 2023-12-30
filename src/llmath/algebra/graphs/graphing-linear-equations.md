@@ -1,1 +1,0 @@
-# graphing-linear-equations
