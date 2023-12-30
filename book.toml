@@ -1,0 +1,10 @@
+[book]
+authors = ["Paul Alesius"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Large Language Math - The Mathematics of LLM Foundational Models - For Beginners"
+
+[output.html]
+mathjax-support = true
+

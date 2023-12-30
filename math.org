@@ -1,0 +1,105 @@
+
+Tier 1: Building Mathematical Foundations
+    The World of Numbers and Operations
+        Basic Mathematical Principles
+        Introduction to the R Programming Language for Mathematics
+    Diving into Algebra
+        Basic Algebraic Concepts
+            Introduction to Algebra: Variables, Constants, Expressions
+                [[#algebra-variables][Introduction to Variables]]
+                [[#algebra-constants][Constants and Their Role]]
+                Algebraic Expressions
+                Combining Expressions with Operators
+                Evaluating Expressions
+            Arithmetic Operations in Algebra: Addition, Subtraction, Multiplication, Division with Variables
+        Working with Equations
+            Solving Simple Equations
+            Balancing and Simplifying Equations
+        The Concept of Functions
+            Defining and Evaluating Functions
+        Basic Inequalities
+            Understanding and Solving Inequalities
+        Algebraic Properties and Rules
+            Commutative, Associative, Distributive Properties
+            Exponents and Radicals
+        Factoring Algebraic Expressions
+        Linear Equations and Their Graphs
+            Plotting Linear Equations in R
+    Exploring Functions and Graphs
+        Function Types and Their Properties
+        Introduction to Graph Theory in R
+    First Steps in Calculus
+        Basics of Derivatives and Integrals
+        Implementing Calculus Concepts in R
+    Basics of Linear Algebra
+        Vectors and Matrices in R
+        Matrix Operations and Applications
+    Probability and Statistics
+        Fundamentals of Probability Theory
+        Descriptive Statistics Using R
+
+Tier 2: Intermediate Mathematical Concepts
+    Advanced Algebra in R
+        Complex Algebraic Structures and Solutions
+    Multivariable Calculus
+        Partial Derivatives and Multiple Integrals in R
+    Deeper into Linear Algebra
+        Eigenvalues and Eigenvectors: Computation and Applications
+    Statistical Learning Foundations
+        Regression Analysis and Correlation in R
+        Introduction to Bayesian Statistics with R
+    Optimization Techniques
+        Understanding and Implementing Gradient Descent in R
+
+Tier 3: Advanced Mathematics of GPT Algorithms
+    Deep Dive into Neural Networks
+        Structure and Training: Concepts and R Implementations
+        Backpropagation: Mathematical Basis and Coding
+    Understanding Transformers
+        Self-Attention Mechanism: Theory and R Implementation
+        Positional Encoding: Mathematical Concepts and Practical Applications
+    Mathematics of GPT Model Architecture
+        Embedding Layers: Mathematical Foundations and R Coding
+        Multi-Head Attention: Understanding and Implementing in R
+    Optimization Algorithms in Deep Learning
+        Advanced Optimizers: Adam and Others in R
+        Loss Functions: Understanding and Implementing in Deep Learning with R
+
+[[#prompts][Prompts]]
+
+* Introduction to Variables
+:PROPERTIES:
+:CUSTOM_ID: algebra-variables
+:END:
+Variables are a core concept in mathematics and programming. They are symbols or placeholders that can represent different values. Variables allow us to work with unknown or changing values in mathematical expressions and computer programs.
+
+In mathematics, variables are often denoted by letters such as \(x\), \(y\), or \(z\). In programming, variables can have names like `num1`, `result`, or `name`. You can assign values to variables using the assignment operator <- or =. For example:
+
+#+BEGIN_SRC R
+x <- 10   # Assign the value 10 to variable x
+y = 5     # Also assigns the value 5 to variable y
+#+END_SRC
+
+* Constants and Their Role
+:PROPERTIES:
+:CUSTOM_ID: algebra-constants
+:END:
+Constants are values that do not change. They are fixed and can be represented using variables. For example, the number \(\pi\) (pi) is a constant. We can use a variable \(r\) to represent the radius of a circle, and \(\pi\) to represent the constant value of pi. Then, the area of the circle can be calculated as:
+
+\[
+\text{Area} = \pi \cdot r^2
+\]
+
+In R programming, you can declare a constant using the `const` keyword, but in practice, constants are often represented using regular variables with uppercase names.
+
+#+BEGIN_SRC R
+pi_value <- pi
+radius <- 5
+area <- pi_value * radius^2
+#+END_SRC
+
+* Prompts
+:PROPERTIES:
+:CUSTOM_ID: prompts
+:END:
+Various prompts
