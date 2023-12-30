@@ -1,0 +1,46 @@
+* Variables
+
+** Introduction to Variables
+Variables are fundamental elements in algebra that represent unknown values. They are usually denoted by letters such as \( x \), \( y \), and \( z \).
+
+** What is a Variable?
+  - Definition: A variable is a symbol used to represent an unknown or arbitrary number.
+  - Usage: In algebra, variables are used in expressions, equations, and functions.
+
+** Examples of Variables
+  - Simple Variable: \( x \)
+  - Complex Variable: \( a_1, b_2, c_3 \)
+Complex variables allow for the extension of real numbers in algebra to solve equations that haave no real number solutions, like \( x^2 = -1 \).
+
+Complex numbers can be represented on the complex plane, where the horizontal axis represents real numbers from negative to positive, and the vertical axis represents the imaginary part.
+
+** Variables in Algebraic Expressions
+  - Example 1: \( 2x + 3 \)
+  - Example 2: \( a^2 + b^2 \)
+
+** Variables in R Programming
+  - Using R, we can assign values to variables and perform algebraic operations. The following examples demonstrate this concept.
+
+#+BEGIN_SRC R :results output
+x <- 5
+y <- 3
+result <- 2 * x + y
+print(result)
+#+END_SRC
+
+#+RESULTS:
+: [1] 13
+
+** Conclusion
+Variables are placeholders for numbers. They allow us to write general expressions that can be solved for many different values.
+
+#+BEGIN_SRC R :results output
+# Another example with variables in R
+a <- 4
+b <- 2
+expression_result <- a^2 + b
+print(expression_result)
+#+END_SRC
+
+#+RESULTS:
+: 18
