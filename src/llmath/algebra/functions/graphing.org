@@ -17,7 +17,7 @@
 ** Example: Graphing a Linear Function
    Let's graph the linear function \( y = 2x + 3 \).
 
-#+BEGIN_SRC R :results graphics output :file linear_function_plot.png
+#+BEGIN_SRC R :results graphics output file :exports both :file linear_function_plot.png
   library(ggplot2)
   x <- seq(-10, 10, by = 0.1)
   y <- 2 * x + 3
@@ -28,13 +28,12 @@
 #+END_SRC
 
 #+RESULTS:
-
 [[file:linear_function_plot.png]]
 
 ** Example: Graphing a Quadratic Function
    Now, let's graph a quadratic function \( y = x^2 - 4x + 4 \).
 
-#+BEGIN_SRC R :results graphics output :file quadratic_function_plot.png
+#+BEGIN_SRC R :results graphics output file :render both :file quadratic_function_plot.png
   library(ggplot2)
   x <- seq(-10, 10, by = 0.1)
   y <- x^2 - 4 * x + 4
@@ -45,7 +44,6 @@
 #+END_SRC
 
 #+RESULTS:
-
 [[file:quadratic_function_plot.png]]
 
 * Conclusion

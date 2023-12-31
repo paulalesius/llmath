@@ -1,8 +1,5 @@
 #+TITLE: Algebra - Functions and Transformations
 #+OPTIONS: toc:nil num:nil ^:nil -:nil f:nil *:t <:nil
-#+LATEX_HEADER: \usepackage{amsmath}
-#+LATEX_HEADER: \usepackage{graphicx}
-#+PROPERTY: header-args:R :results output graphics :exports both :session *R* :cache yes :noweb yes
 
 #+BEGIN_COMMENT
 This page is buggy
@@ -29,15 +26,15 @@ Let \( f(x) \) be a function. A translation of \( f(x) \) can be represented as 
 - Horizontal Shift: \( g(x) = f(x - h) \)
 - Vertical Shift: \( g(x) = f(x) + k \)
 
-#+BEGIN_SRC R :file transformations.png
-  library(ggplot2)
-  x <- seq(-10, 10, by = 0.1)
-  f <- function(x) x^2
-  g <- function(x) (x - 2)^2 + 3
+#+BEGIN_SRC R :results graphics output file :exports both :file transformations.png
+library(ggplot2)
+x <- seq(-10, 10, by = 0.1)
+f <- function(x) x^2
+g <- function(x) (x - 2)^2 + 3
 
-  df <- data.frame(x = x, Original = f(x), Translated = g(x))
+df <- data.frame(x = x, Original = f(x), Translated = g(x))
 
-  ggplot(df) +
+ggplot(df) +
     geom_line(aes(x = x, y = Original, color = "Original")) +
     geom_line(aes(x = x, y = Translated, color = "Translated")) +
     labs(title = "Function Translation", x = "x", y = "y") +
@@ -46,8 +43,7 @@ Let \( f(x) \) be a function. A translation of \( f(x) \) can be represented as 
 #+END_SRC
 
 #+RESULTS:
-
-file:transformations.png
+[[file:transformations.png]]
 
 ** Stretching and Compressing
 
@@ -57,7 +53,7 @@ A stretched or compressed function \( g(x) \) of \( f(x) \) can be written as \(
 
 ** Example: Stretching a Function
 
-#+BEGIN_SRC R :file transformations_stretching.png
+#+BEGIN_SRC R :results graphics output file :exports both :file transformations_stretching.png
   h <- function(x) 2 * f(x) # Stretching the function by a factor of 2
   df$Stretched <- h(x)
 
@@ -70,7 +66,7 @@ A stretched or compressed function \( g(x) \) of \( f(x) \) can be written as \(
 #+END_SRC
 
 #+RESULTS:
-file:transformations_stretching.png
+[[file:transformations_stretching.png]]
 
 ** Reflection
 
@@ -80,7 +76,7 @@ A reflection of \( f(x) \) over the x-axis is given by \( g(x) = -f(x) \), and o
 
 ** Example: Reflection Over the X-Axis
 
-#+BEGIN_SRC R :file transformations_x.png
+#+BEGIN_SRC R :results graphics output file :exports both :file transformations_x.png
   i <- function(x) -f(x) # Reflecting over the x-axis
   df$Reflected <- i(x)
 
@@ -93,8 +89,7 @@ A reflection of \( f(x) \) over the x-axis is given by \( g(x) = -f(x) \), and o
 #+END_SRC
 
 #+RESULTS:
-
-file:transformations_x.png
+[[file:transformations_x.png]]
 
 ** Conclusion
 
