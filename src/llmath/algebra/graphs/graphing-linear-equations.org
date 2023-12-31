@@ -1,0 +1,48 @@
+#+title: Graphing Linear Equations
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+#+TODO: Buggy examples
+#+QA: low
+
+Graphing linear equations is a fundamental concept in algebra. It involves plotting the solutions of a linear equation on a Cartesian coordinate system. A linear equation in two variables, typically x and y, can be written in the form y = mx + b, where m is the slope of the line and b is the y-intercept.
+
+* The Slope and Y-intercept
+  The slope, m, indicates the steepness and direction of the line. A positive slope means the line ascends from left to right, while a negative slope descends. The y-intercept, b, is the point where the line crosses the y-axis.
+
+* Plotting a Linear Equation
+  To plot a linear equation, we need at least two points. By choosing different values for x and solving for y, we can find these points.
+
+** Example: Plotting y = 2x + 3
+   Let's plot the linear equation y = 2x + 3 using R.
+
+#+BEGIN_SRC R :exports both :file linear_plot_1.png
+library(ggplot2)
+x_values <- -10:10
+y_values <- 2 * x_values + 3
+df <- data.frame(x = x_values, y = y_values)
+ggplot(df, aes(x = x, y = y)) + geom_line() +
+  labs(title = "Graph of y = 2x + 3") +
+  theme_minimal()
+#+END_SRC
+
+* Finding Intercepts
+  - The y-intercept is found by setting x = 0 in the equation.
+  - The x-intercept is found by setting y = 0 and solving for x.
+
+** Example: Finding Intercepts for y = -x + 2
+   For the equation y = -x + 2, the y-intercept is at (0, 2), and the x-intercept can be found by setting y = 0.
+
+#+BEGIN_SRC R :exports both :file intercepts_plot.png
+x_intercept <- 2  # setting y = 0
+y_intercept <- 2  # setting x = 0
+df_intercepts <- data.frame(x = c(0, x_intercept), y = c(y_intercept, 0))
+ggplot(df_intercepts, aes(x = x, y = y)) + geom_point() +
+  labs(title = "Intercepts of y = -x + 2") +
+  theme_minimal()
+#+END_SRC
+
+* Graph Characteristics
+  - Slope: Determines the angle of the line.
+  - Intercepts: Points where the line crosses the axes.
+  - Parallel and Perpendicular Lines: Determined by slopes. Parallel lines have equal slopes, while perpendicular lines have slopes that are negative reciprocals of each other.
+
+Understanding how to graph linear equations lays the groundwork for more advanced algebraic concepts, such as systems of equations and inequalities.

@@ -1,0 +1,38 @@
+#+title: Non Linear Graphs
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+#+QA: low
+
+Non-linear graphs represent equations that do not form straight lines when plotted. These graphs are crucial in understanding complex relationships in algebra, where the rate of change is not constant. Common types of non-linear graphs include parabolas, exponential curves, and circles.
+
+* Quadratic Graphs (Parabolas)
+Quadratic functions are polynomial functions of degree 2, typically in the form \( f(x) = ax^2 + bx + c \). The graph of a quadratic function is a parabola. Depending on the value of \( a \), the parabola opens upwards (\( a > 0 \)) or downwards (\( a < 0 \)).
+
+** Example: Graph of \( f(x) = x^2 - 4x + 3 \)
+#+BEGIN_SRC R :exports both :file quadratic_plot.png
+x <- seq(-1, 5, by = 0.1)
+y <- x^2 - 4*x + 3
+plot(x, y, type="l", col="blue", main="Graph of f(x) = x^2 - 4x + 3")
+#+END_SRC
+
+* Exponential Graphs
+Exponential functions have the form \( f(x) = a \cdot b^x \), where \( b \) is a positive real number. These graphs show growth or decay and are widely used in financial and scientific applications.
+
+** Example: Graph of \( f(x) = 2^x \)
+#+BEGIN_SRC R :exports both :file exponential_plot.png
+x <- seq(-2, 2, by = 0.1)
+y <- 2^x
+plot(x, y, type="l", col="red", main="Graph of f(x) = 2^x")
+#+END_SRC
+
+* Circular Graphs
+Circular graphs represent equations in the form \( x^2 + y^2 = r^2 \), where \( r \) is the radius of the circle. These are essential in trigonometry and geometry.
+
+** Example: Graph of a Circle with radius 2
+#+BEGIN_SRC R :exports both :file circle_plot.png
+theta <- seq(0, 2*pi, by = 0.01)
+x <- 2 * cos(theta)
+y <- 2 * sin(theta)
+plot(x, y, type="l", asp=1, col="green", main="Circle with radius 2")
+#+END_SRC
+
+In summary, understanding non-linear graphs is essential for interpreting complex algebraic relationships. These graphs provide visual insight into the behavior of different types of equations, beyond the simplicity of linear relationships.

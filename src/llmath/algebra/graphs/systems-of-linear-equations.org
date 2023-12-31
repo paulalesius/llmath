@@ -1,0 +1,67 @@
+#+title: Systems Of Linear Equations
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+
+Systems of linear equations consist of two or more linear equations involving the same set of variables. The goal is to find values for the variables that satisfy all the equations simultaneously. Solutions can be visualized as the intersection points of lines in a graph. We'll explore methods to solve these systems, including graphically, algebraically (substitution and elimination methods), and using matrices.
+
+* Understanding Systems of Linear Equations
+  - **Definition**: A system of linear equations is a set of two or more linear equations in the same variables. For example, a system with two equations in two variables (x and y) looks like:
+    \begin{align*}
+    a_1x + b_1y &= c_1 \\
+    a_2x + b_2y &= c_2
+    \end{align*}
+  - **Solution**: A solution to the system is a set of values for x and y that makes both equations true simultaneously.
+
+* Graphical Representation
+  - Each linear equation in a system can be represented as a line in a two-dimensional space. The intersection point of these lines is the solution to the system.
+  - The R code below generates a plot of two linear equations.
+
+  #+BEGIN_SRC R :exports both :file linear_system_plot.png
+  x <- seq(-10, 10, by = 0.1)
+  y1 <- 2*x + 3
+  y2 <- -x + 1
+  plot(x, y1, type='l', col='blue', ylim=c(-10, 10), xlab='x', ylab='y')
+  lines(x, y2, col='red')
+  #+END_SRC
+
+* Solving Systems of Linear Equations
+  - **Graphical Method**: Plotting both equations and finding the intersection point.
+  - **Algebraic Methods**:
+    + *Substitution*: Solve one equation for one variable and substitute this into the other equation.
+    + *Elimination*: Add or subtract equations to eliminate one variable, making it easier to solve for the other.
+  - **Matrix Method**: Using matrix operations to solve the system (more advanced, typically covered in linear algebra courses).
+
+* R Examples: Solving Algebraically
+  - **Example of Substitution Method**:
+    + Solve one equation for x or y.
+    + Substitute this expression into the other equation to find one variable.
+    + Use this value to find the other variable.
+
+  #+BEGIN_SRC R
+  # Example equations: y = 2x + 3 and y = -x + 1
+  solve_x <- function(y) {(y - 3) / 2}
+  solve_y <- function(x) {-x + 1}
+  # Substitute and solve
+  y_solution = solve_y(solve_x(1))
+  x_solution = solve_x(y_solution)
+  c(x_solution, y_solution)
+  #+END_SRC
+
+  - **Example of Elimination Method**:
+    + Multiply or divide equations to align coefficients.
+    + Add or subtract equations to eliminate one variable.
+    + Solve for the remaining variable.
+
+  #+BEGIN_SRC R
+  # Example equations: 2x + 3y = 5 and -x + 4y = 6
+  # Align x coefficients and add the equations to eliminate x
+  # (2x + 3y) + 2*(-x + 4y) = 5 + 2*6
+  solve_y_elimination <- function() {
+    (5 + 2*6) / (3 + 2*4)
+  }
+  y_solution_elimination = solve_y_elimination()
+  x_solution_elimination = (5 - 3*y_solution_elimination) / 2
+  c(x_solution_elimination, y_solution_elimination)
+  #+END_SRC
+
+* Conclusion
+  - Understanding systems of linear equations is crucial in algebra and forms the basis for more complex mathematical concepts. The methods described here provide a foundation for solving these systems, and mastering these techniques is essential for further studies in mathematics and related fields.
