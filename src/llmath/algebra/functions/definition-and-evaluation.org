@@ -1,4 +1,5 @@
 #+TITLE: Algebra - Functions: Definition and Evaluation
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports both :tangle yes
 
 * Introduction
   Functions are fundamental to algebra and mathematics in general. They describe how one quantity depends on another.
@@ -18,7 +19,7 @@
   - A linear function can be represented as \( f(x) = mx + b \).
   - Example: \( f(x) = 2x + 3 \), where \( m = 2 \) and \( b = 3 \).
 
-  #+BEGIN_SRC R :results graphics :file linear_plot.png
+  #+BEGIN_SRC R :file linear_plot.png
     f <- function(x) {
       return(2 * x + 3)
     }
@@ -32,8 +33,6 @@
 
   #+RESULTS:
 
-  [file:linear_plot.png]
-
 * Quadratic Function Example
   - A quadratic function is represented as \( f(x) = ax^2 + bx + c \).
 
@@ -41,7 +40,7 @@ This formula is a standard representation where \( a \), \( b \), and \( c \) ar
 
   - Example: \( f(x) = x^2 - 4x + 3 \), with \( a = 1 \), \( b = -4 \), and \( c = 3 \).
 
-  #+BEGIN_SRC R :results graphics :file quadratic_plot.png
+  #+BEGIN_SRC R :file quadratic_plot.png
     a <- 1
     b <- -4
     c <- 3
@@ -58,9 +57,6 @@ This formula is a standard representation where \( a \), \( b \), and \( c \) ar
   #+END_SRC
 
   #+RESULTS:
-
-
-  [file:quadratic_plot.png]
 
 * Practice
   1. Define a function \( g(x) = x^3 - 4x + 6 \) and evaluate it at \( x = 2 \).

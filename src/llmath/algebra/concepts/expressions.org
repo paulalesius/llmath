@@ -1,7 +1,7 @@
 #+TITLE: Algebraic Expressions
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports both :tangle yes
 
-* Introduction
-  Algebraic expressions are combinations of variables, constants, and operations. In this section, we will explore how these expressions are formed and manipulated.
+Algebraic expressions are combinations of variables, constants, and operations. In this section, we will explore how these expressions are formed and manipulated.
 
 * Algebraic Expressions
 ** Definition
@@ -21,14 +21,14 @@
   We will use R to perform some basic operations on algebraic expressions.
 
 ** Addition Example
-   #+BEGIN_SRC R
+   #+BEGIN_SRC R :exports code
    x <- 2 # Assign a value to x
    expression <- 3 * x + 4
    print(expression)
    #+END_SRC
 
 ** Subtraction Example
-   #+BEGIN_SRC R
+   #+BEGIN_SRC R :exports code
    y <- 5 # Assign a value to y
    expression <- 5 * y - 7
    print(expression)
@@ -36,7 +36,7 @@
 
 ** Polynomial Example
 Polynomials will be explained in further chapters, but it's also an expression.
-   #+BEGIN_SRC R
+   #+BEGIN_SRC R :exports code
    x <- 1 # Assign a value to x
    expression <- 2 * x^2 + 3 * x - 5
    print(expression)

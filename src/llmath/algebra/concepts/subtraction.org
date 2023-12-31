@@ -1,4 +1,5 @@
 #+TITLE: Subtraction in Algebra
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports both :tangle yes
 
 Subtraction is one of the fundamental operations in algebra. It represents the operation of removing objects from a collection. The result of a subtraction is called a "difference."
 
@@ -14,7 +15,7 @@ Subtraction is one of the fundamental operations in algebra. It represents the o
    - In terms of variables, \( a - b \) simply represents the difference between \( a \) and \( b \).
 
 * R Programming Examples
-   #+BEGIN_SRC R :results output
+   #+BEGIN_SRC R :exports code
    # Example 1: Subtraction of two numbers
    a <- 10
    b <- 5

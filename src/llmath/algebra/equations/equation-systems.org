@@ -1,4 +1,5 @@
 #+TITLE: Understanding Systems of Equations
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
 
 * Introduction
 Systems of equations are fundamental in algebra. They consist of two or more equations with a common set of variables. The goal is to find values for these variables that satisfy all equations in the system simultaneously.
@@ -29,7 +30,7 @@ Consider the system of equations:
 
 We can solve this using R programming:
 
-#+BEGIN_SRC R :results output
+#+BEGIN_SRC R
 A <- matrix(c(1, 1, 2, 3), nrow = 2, byrow = TRUE)
 b <- c(10, 30)
 solution <- solve(A, b)

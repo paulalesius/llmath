@@ -1,4 +1,5 @@
 #+TITLE: Algebra - Balancing and Simplifying Equations
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
 
 * Introduction
   In this section, we'll learn about balancing and simplifying algebraic equations. These are crucial techniques for solving equations effectively.

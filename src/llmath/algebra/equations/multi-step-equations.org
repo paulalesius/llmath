@@ -1,4 +1,5 @@
 #+TITLE: Multi-Step Equations
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
 
 * Introduction to Multi-Step Equations
 Multi-step equations are algebraic equations that require more than one step to solve. These types of equations often involve multiple operations, such as addition, subtraction, multiplication, and division.

@@ -1,4 +1,5 @@
 #+TITLE: Setting Up Your R Environment for Mathematical Exploration
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports both :tangle yes
 
 * Introduction
   Before diving into the mathematical concepts and experiments in this book, it's essential to set up your R environment correctly. R, a powerful language for statistical computing and graphics, will be our tool for live experimentation and visualization in math. This setup guide assumes that you have R already installed on your system.
@@ -14,14 +15,14 @@ Open your R interpreter. You can do this by running the 'R' command in your term
 ** ggplot2
   ggplot2 is a widely used R package for creating complex and beautiful plots. It's an essential tool for visualizing mathematical functions and data in this book.
 
-#+BEGIN_SRC R :export both :results output
+#+BEGIN_SRC R :exports code :tangle no
   install.packages("ggplot2")
 #+END_SRC
 
 * Verifying the Installation
   To ensure that ggplot2 is installed correctly and ready for use, you can load the package and create a simple plot:
 
-  #+BEGIN_SRC R :results output graphics :file r.png
+  #+BEGIN_SRC R :file r.png
     library(ggplot2)
     ggplot(data.frame(x = 1:10, y = 1:10), aes(x, y)) + geom_line()
   #+END_SRC
@@ -29,8 +30,6 @@ Open your R interpreter. You can do this by running the 'R' command in your term
   #+RESULTS:
 
   If you the following line plot without errors, your ggplot2 installation is successful.
-
-  file:r.png
 
 * Conclusion
   With your R environment set up and R libraries installed, you are now ready to embark on a journey of exploring mathematical concepts interactively. This setup will empower you to experiment with and visualize the concepts discussed in this book.

@@ -1,4 +1,5 @@
 #+TITLE: Understanding Simple Equations in Algebra
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
 
 * Introduction
   Understanding simple equations is a fundamental aspect of algebra. This document aims to introduce the concepts of simple equations, demonstrate how to solve them, and provide practical examples using the R programming language.
@@ -6,9 +7,7 @@
 * Simple Equations: Definition and Examples
   A simple equation is a mathematical statement that asserts the equality of two expressions. These equations typically involve a variable, which we solve for.
 
-  #+BEGIN_LATEX
   A simple linear equation: \( ax + b = 0 \)
-  #+END_LATEX
 
   Where \(a\) and \(b\) are constants, and \(x\) is the variable.
 

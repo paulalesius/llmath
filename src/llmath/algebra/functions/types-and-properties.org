@@ -1,4 +1,6 @@
 #+TITLE: Types and Properties of Algebraic Functions
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports both :tangle yes
+#+TODO: buggy document, not rendering
 
 * Introduction
   In this section, we explore the various types of functions in algebra and their unique properties. Understanding these functions is crucial for applications in various fields, including artificial intelligence.
@@ -20,7 +22,7 @@
      - Properties: Exponential functions grow or decay at a rate proportional to their current value.
 
 * R Examples and Plots
-  #+BEGIN_SRC R :results output graphics :file linear_function_plot.png
+  #+BEGIN_SRC R :file linear_function_plot.png
     library(ggplot2)
     x <- seq(-10, 10, by = 0.1)
     y <- 2 * x + 3
@@ -29,27 +31,20 @@
 
   #+RESULTS:
 
-  [[file:linear_function_plot.png]]
-
-  #+BEGIN_SRC R :results output graphics :file quadratic_function_plot.png
+  #+BEGIN_SRC R :file quadratic_function_plot.png
     y <- x^2 - 4*x + 4
     ggplot(data.frame(x, y), aes(x, y)) + geom_line() + ggtitle("Quadratic Function: f(x) = x^2 - 4x + 4")
   #+END_SRC
 
   #+RESULTS:
 
-  [[file:quadratic_function_plot.png]]
-
-  #+BEGIN_SRC R :results output graphics :file exponential_function_plot.png
+  #+BEGIN_SRC R :file exponential_function_plot.png
     y <- 2 * 3^x
     ggplot(data.frame(x, y), aes(x, y)) + geom_line() + scale_y_log10() + ggtitle("Exponential Function: f(x) = 2 * 3^x")
   #+END_SRC
 
   #+RESULTS:
 
-  [[file:exponential_function_plot.png]]
-
 * Conclusion
   Understanding the types and properties of functions in algebra is essential for mathematical literacy and application in various fields. Through the examples and plots, we can visually appreciate the behavior of these functions.
 
-#+END

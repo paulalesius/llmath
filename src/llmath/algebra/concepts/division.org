@@ -1,4 +1,5 @@
 #+TITLE: Division
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports both :tangle yes
 
 Division is one of the four basic operations of arithmetic, the others being addition, subtraction, and multiplication. In division, we split a number (the dividend) by another number (the divisor) to find how many times the divisor fits into the dividend.
 
@@ -17,7 +18,7 @@ is not defined.
 * Examples of Division
 Below are examples demonstrating division using the R programming language.
 
-#+BEGIN_SRC R :results output
+#+BEGIN_SRC R :exports code
 # Example 1: Simple division
 dividend1 <- 10
 divisor1 <- 2

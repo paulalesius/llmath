@@ -1,4 +1,5 @@
-#+TITLE: Graphing Functions in Algebra
+#+TITLE:  Graphing Functions in Algebra
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports both :tangle yes
 
 * Introduction
   Graphing functions is a fundamental skill in algebra that helps in visualizing the relationship between variables. This document will guide you through the basics of graphing functions, with examples in R programming language.
@@ -17,7 +18,7 @@
 ** Example: Graphing a Linear Function
    Let's graph the linear function \( y = 2x + 3 \).
 
-#+BEGIN_SRC R :results graphics output file :exports both :file linear_function_plot.png
+#+BEGIN_SRC R :file linear_function_plot.png
   library(ggplot2)
   x <- seq(-10, 10, by = 0.1)
   y <- 2 * x + 3
@@ -28,12 +29,11 @@
 #+END_SRC
 
 #+RESULTS:
-[[file:linear_function_plot.png]]
 
 ** Example: Graphing a Quadratic Function
    Now, let's graph a quadratic function \( y = x^2 - 4x + 4 \).
 
-#+BEGIN_SRC R :results graphics output file :render both :file quadratic_function_plot.png
+#+BEGIN_SRC R :file quadratic_function_plot.png
   library(ggplot2)
   x <- seq(-10, 10, by = 0.1)
   y <- x^2 - 4 * x + 4
@@ -44,7 +44,6 @@
 #+END_SRC
 
 #+RESULTS:
-[[file:quadratic_function_plot.png]]
 
 * Conclusion
   Graphing functions is a crucial skill in algebra, providing a visual understanding of mathematical relationships. Through practice and the use of tools like R, you can gain deeper insights into the behavior of various functions.

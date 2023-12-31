@@ -1,4 +1,5 @@
 #+TITLE: Addition
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports both :tangle yes
 
 * Introduction
   Addition is one of the fundamental operations in algebra. It involves the process of calculating the total or sum of two or more numbers or variables. The symbol used to denote addition is \(+\).
@@ -13,7 +14,7 @@
   - /Associative Property/: The way numbers are grouped in an addition problem does not change the sum. For example, \((a + b) + c = a + (b + c)\).
 
 * Examples in R Programming
-  #+BEGIN_SRC R :results output
+  #+BEGIN_SRC R :exports code
     # Example of number addition
     sum1 <- 2 + 3
     print(sum1)

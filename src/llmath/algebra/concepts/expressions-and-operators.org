@@ -1,4 +1,5 @@
 #+TITLE: Algebra Concepts - Expressions and Operators
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports both :tangle yes
 
 * Expressions and Operators
   Algebraic expressions are combinations of variables, numbers, and operators. Operators are symbols that represent mathematical operations such as addition, subtraction, multiplication, and division.
@@ -21,28 +22,28 @@
   We will demonstrate some basic algebraic operations using R.
 
 ** Addition Example in R
-   #+BEGIN_SRC R :results output
+   #+BEGIN_SRC R :exports code
      x <- 5
      y <- 3
      x + y
    #+END_SRC
 
 ** Subtraction Example in R
-   #+BEGIN_SRC R :results output
+   #+BEGIN_SRC R :exports code
      x <- 10
      y <- 4
      x - y
    #+END_SRC
 
 ** Multiplication Example in R
-   #+BEGIN_SRC R :results output
+   #+BEGIN_SRC R :exports code
      a <- 7
      b <- 2
      a * b
    #+END_SRC
 
 ** Division Example in R
-   #+BEGIN_SRC R :results output
+   #+BEGIN_SRC R :exports code
      a <- 20
      b <- 4
      a / b

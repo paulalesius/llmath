@@ -1,5 +1,5 @@
 #+TITLE: Algebra - Constants
-#+DATE: Today's Date
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports both :tangle yes
 
 * Introduction to Constants
   Constants are fixed values that do not change. In algebra, constants are often represented by letters, but their value remains the same throughout an equation or a problem. Common examples include numbers like \( 2, -5, \frac{3}{4} \), and mathematical constants like \( \pi \) and \( e \).
@@ -15,7 +15,7 @@
 * Using Constants in R
   Constants can be used in R to perform calculations. Below are examples demonstrating how to work with constants in R.
 
-  #+BEGIN_SRC R :exports both :results output
+  #+BEGIN_SRC R :exports code
   # Define a constant
   a <- 5
 

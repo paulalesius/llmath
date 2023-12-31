@@ -1,4 +1,5 @@
 #+TITLE: Understanding the Domain and Range of Functions
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
 
 In this document, we will explore the concepts of domain and range in the context of algebraic functions.
 
@@ -22,7 +23,7 @@ In this document, we will explore the concepts of domain and range in the contex
      - \( R(f) = \{f(x) \in \mathbb{R}\} \)
 
 ** R Code Example
-     #+BEGIN_SRC R :exports both :results output
+     #+BEGIN_SRC R
        f <- function(x) { 2*x + 3 }
        # Example values
        x_values <- c(-10, 0, 10)
@@ -42,7 +43,7 @@ In this document, we will explore the concepts of domain and range in the contex
      - \( R(f) = \{f(x) \in \mathbb{R} | f(x) \geq -4\} \)
 
 ** R Code Example
-     #+BEGIN_SRC R :exports both :results output
+     #+BEGIN_SRC R
        f <- function(x) { x^2 - 4 }
        # Example values
        x_values <- c(-3, 0, 3)

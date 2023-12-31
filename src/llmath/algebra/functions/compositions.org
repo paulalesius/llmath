@@ -1,4 +1,5 @@
 #+TITLE: Function Compositions in Algebra
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
 
 * Introduction to Function Composition
   Function composition is a way of combining two or more functions to create a new function. In mathematical terms, if you have two functions \( f(x) \) and \( g(x) \), their composition is denoted as \( (f \circ g)(x) = f(g(x)) \).
@@ -17,18 +18,16 @@
    Let's consider two functions \( f(x) = x^2 \) and \( g(x) = x + 1 \). Find the composition \( (f \circ g)(x) \).
 
    Solution:
-   #+BEGIN_SRC latex
    \begin{align*}
    (f \circ g)(x) &= f(g(x)) \\
                   &= f(x + 1) \\
                   &= (x + 1)^2
    \end{align*}
-   #+END_SRC
 
 ** Example 2: Using R for Composition
    We will define two functions in R and compute their composition.
 
-   #+BEGIN_SRC R :results output graphics :file composition_plot.png
+   #+BEGIN_SRC R :exports both :file composition_plot.png
    f <- function(x) x^2
    g <- function(x) x + 1
 
@@ -37,9 +36,7 @@
 
    # Plot the composition
    x_vals <- seq(-10, 10, by = 0.1)
-   plot(x_vals, sapply(x_vals, composition), type = 'l', main = "Plot of (f \circ g)(x)", xlab = "x", ylab = "(f \circ g)(x)")
+   plot(x_vals, sapply(x_vals, composition), type = 'l', main = "Plot of (f \\circ g)(x)", xlab = "x", ylab = "(f \\circ g)(x)")
    #+END_SRC
 
    #+RESULTS:
-   [[file:composition_plot.png]]
-
