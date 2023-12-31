@@ -2,14 +2,14 @@
 	algebra
 		concepts
 			[[file:llmath/algebra/concepts/variables.org][variables]]
-			constants
-			expressions
-			expressions-and-operators
-			addition
-			subtraction
-			multiplication
-			division
-			pemdas
+			[[file:llmath/algebra/concepts/constants.org][constants]]
+			[[file:llmath/algebra/concepts/expressions.org][expressions]]
+			[[file:llmath/algebra/concepts/expressions-and-operators.org][expressions-and-operators]]
+			[[file:llmath/algebra/concepts/addition.org][addition]]
+			[[file:llmath/algebra/concepts/subtraction.org][subtraction]]
+			[[file:llmath/algebra/concepts/multiplication.org][multiplication]]
+			[[file:llmath/algebra/concepts/division.org][division]]
+			[[file:llmath/algebra/concepts/pemdas.org][pemdas]]
 		equations
 			simple-equations
 			balancing-and-simplifying

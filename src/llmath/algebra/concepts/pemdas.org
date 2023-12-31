@@ -1,0 +1,46 @@
+#+TITLE: PEMDAS - Order of Operations
+
+The acronym PEMDAS helps to remember the order of operations in algebra. It stands for Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).
+
+* Parentheses
+First, perform all operations inside parentheses.
+#+BEGIN_LATEX
+\[ (a + b) \times c \]
+#+END_LATEX
+
+* Exponents
+Then, solve the exponents (or powers).
+#+BEGIN_LATEX
+\[ a^b \]
+#+END_LATEX
+
+* Multiplication and Division
+Next, perform multiplication and division from left to right.
+#+BEGIN_LATEX
+\[ \frac{a \times b}{c} \]
+#+END_LATEX
+
+* Addition and Subtraction
+Finally, perform addition and subtraction from left to right.
+#+BEGIN_LATEX
+\[ a + b - c \]
+#+END_LATEX
+
+* Examples in R
+Let's see some examples of these operations using R programming language.
+
+Evaluating an expression with all operations.
+#+BEGIN_SRC R :results output
+# Expression: (3 + 2) ^ 2 - 4 * 2
+result <- (3 + 2) ^ 2 - 4 * 2
+print(result)
+#+END_SRC
+
+Evaluating a more complex expression.
+#+BEGIN_SRC R :results output
+# Expression: ((2 * 3) - (4 / 2)) ^ 2 + 6
+result <- ((2 * 3) - (4 / 2)) ^ 2 + 6
+print(result)
+#+END_SRC
+
+You should know PEMDAS by heart, the order of operations is crucial for correctly solving algebraic expressions.

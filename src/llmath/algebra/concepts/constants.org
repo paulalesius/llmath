@@ -1,0 +1,32 @@
+#+TITLE: Algebra - Constants
+#+DATE: Today's Date
+
+* Introduction to Constants
+  Constants are fixed values that do not change. In algebra, constants are often represented by letters, but their value remains the same throughout an equation or a problem. Common examples include numbers like \( 2, -5, \frac{3}{4} \), and mathematical constants like \( \pi \) and \( e \).
+
+* Characteristics of Constants
+  - Fixed Value: A constant represents a specific, unchanging number.
+  - Symbol Representation: While they can be represented by any symbol, they are often denoted by letters like \( c, d, k \).
+
+* Examples of Constants
+  1. The number \( 5 \) in the expression \( 5x + 3 \) is a constant.
+  2. In the formula for the circumference of a circle, \( C = 2\pi r \), \( \pi \) is a constant approximately equal to \( 3.14159 \).
+
+* Using Constants in R
+  Constants can be used in R to perform calculations. Below are examples demonstrating how to work with constants in R.
+
+  #+BEGIN_SRC R :exports both :results output
+  # Define a constant
+  a <- 5
+
+  # Use the constant in an expression
+  result <- a * 2 + 3
+  print(result)
+
+  # Mathematical constant pi
+  circumference <- 2 * pi * 10
+  print(circumference)
+  #+END_SRC
+
+* Conclusion
+  Understanding constants is fundamental in algebra. They are used in various mathematical formulas and expressions, and recognizing them is crucial in solving algebraic equations.

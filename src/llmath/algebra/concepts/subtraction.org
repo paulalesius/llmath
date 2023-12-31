@@ -1,0 +1,37 @@
+#+TITLE: Subtraction in Algebra
+
+Subtraction is one of the fundamental operations in algebra. It represents the operation of removing objects from a collection. The result of a subtraction is called a "difference."
+
+* Definition
+   The subtraction of two numbers is the operation of finding the difference between them. If \( a \) and \( b \) are two numbers, the subtraction of \( b \) from \( a \) is written as \( a - b \).
+
+* Properties
+   - Subtraction is not commutative, i.e., \( a - b \neq b - a \) in general.
+   - Subtraction is not associative, i.e., \( (a - b) - c \neq a - (b - c) \) in general.
+
+* Examples in Algebra
+   - If \( x = 10 \) and \( y = 5 \), then \( x - y = 10 - 5 = 5 \).
+   - In terms of variables, \( a - b \) simply represents the difference between \( a \) and \( b \).
+
+* R Programming Examples
+   #+BEGIN_SRC R :results output
+   # Example 1: Subtraction of two numbers
+   a <- 10
+   b <- 5
+   difference <- a - b
+   print(difference)
+
+   # Example 2: Subtraction with variables
+   x <- 15
+   y <- 7
+   result <- x - y
+   print(result)
+   #+END_SRC
+
+* Practice
+- If \( a = 8 \) and \( b = 3 \), what is \( a - b \)?
+- Find the difference between \( x \) and \( 2x \).
+In this expression, \( x \) and \( 2x \) are like terms because they both have \( x \) as the variable part. To combine them, we add their coefficients (keeping in mind the signs). The coefficient of \( x \) is 1 (since \( x \) is the same as \( 1x \)).
+
+\( x \), or explicitly \( 1x \),can be read a "one quantity of X", so the practice problem can be read as "the subtraction of 2 quantities of \( x \) from 1 quantity of \( x \)".
+- Find the difference between \( 1x \) and \( x \)

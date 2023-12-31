@@ -1,0 +1,33 @@
+#+TITLE: Multiplication
+
+Multiplication is one of the fundamental operations in algebra. It involves combining equal groups to find the total number of items. The multiplication of two numbers is equivalent to adding one of the numbers to itself repeatedly based on the value of the other number.
+
+* Basic Definition
+   The multiplication of two numbers \( a \) and \( b \) is denoted as \( a \times b \) or \( ab \). Here, \( a \) and \( b \) are called the multiplicands.
+
+   - For example, \( 3 \times 4 \) means adding 3 four times: \( 3 + 3 + 3 + 3 = 12 \).
+
+* Properties of Multiplication
+   - Commutative Property: \( a \times b = b \times a \)
+   - Associative Property: \( (a \times b) \times c = a \times (b \times c) \)
+   - [[file:../properties/distributive.org][Distributive Property]]: \( a \times (b + c) = a \times b + a \times c \)
+
+* Multiplication with Variables
+   When dealing with variables, the same principles apply. For instance, \( x \times y \) represents adding \( x \) \( y \) times, or vice versa.
+
+* Examples in R
+   Below are some examples demonstrating multiplication using the R programming language.
+
+   #+BEGIN_SRC R :results output
+     # Multiplying two numbers
+     3 * 4
+
+     # Multiplying variables
+     a <- 5
+     b <- 6
+     a * b
+   #+END_SRC
+
+* Practice
+   - Calculate \( 7 \times 8 \).
+   - If \( x = 3 \) and \( y = 4 \), find the value of \( 2xy \).
