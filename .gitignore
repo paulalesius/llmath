@@ -2,3 +2,4 @@ book
 *.old
 *.html
 src/llmath/**/*.png
+src/**/*.pdf
