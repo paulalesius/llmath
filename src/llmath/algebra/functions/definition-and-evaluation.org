@@ -1,0 +1,67 @@
+#+TITLE: Algebra - Functions: Definition and Evaluation
+
+* Introduction
+  Functions are fundamental to algebra and mathematics in general. They describe how one quantity depends on another.
+
+* Definition of a Function
+  A function is a relation between a set of inputs and a set of permissible outputs. For each input, there is exactly one output. Functions are often expressed as \( f(x) \) where \( x \) is the input and \( f(x) \) is the output.
+
+* Basic Function Terminology
+  - /Domain/: The set of all possible input values.
+  - /Range/: The set of all possible output values.
+  - /f(x)/: The function notation, where \( x \) is the input and \( f(x) \) is the output.
+
+* Evaluation of Functions
+  To evaluate a function means to find the output for a given input.
+
+* Linear Function Example
+  - A linear function can be represented as \( f(x) = mx + b \).
+  - Example: \( f(x) = 2x + 3 \), where \( m = 2 \) and \( b = 3 \).
+
+  #+BEGIN_SRC R :results graphics :file linear_plot.png
+    f <- function(x) {
+      return(2 * x + 3)
+    }
+
+    x_values <- seq(-10, 10, by = 0.1)
+    y_values <- sapply(x_values, f)
+
+    plot(x_values, y_values, type = "l", main = "Linear Function: f(x) = 2x + 3",
+         xlab = "x", ylab = "f(x)", col = "blue")
+  #+END_SRC
+
+  #+RESULTS:
+
+  [file:linear_plot.png]
+
+* Quadratic Function Example
+  - A quadratic function is represented as \( f(x) = ax^2 + bx + c \).
+
+This formula is a standard representation where \( a \), \( b \), and \( c \) are constants, and aa is not zero. The function describes a parabola in the coordinate plane. The values of \( a \), \( b \), and \( c \) determine the specific shape and position of the parabola.
+
+  - Example: \( f(x) = x^2 - 4x + 3 \), with \( a = 1 \), \( b = -4 \), and \( c = 3 \).
+
+  #+BEGIN_SRC R :results graphics :file quadratic_plot.png
+    a <- 1
+    b <- -4
+    c <- 3
+
+    f <- function(x) {
+      return(a * x^2 + b * x + c)
+    }
+
+    x_values <- seq(-2, 5, by = 0.1)
+    y_values <- sapply(x_values, f)
+
+    plot(x_values, y_values, type = "l", main = "Quadratic Function: f(x) = x^2 - 4x + 3",
+         xlab = "x", ylab = "f(x)", col = "red")
+  #+END_SRC
+
+  #+RESULTS:
+
+
+  [file:quadratic_plot.png]
+
+* Practice
+  1. Define a function \( g(x) = x^3 - 4x + 6 \) and evaluate it at \( x = 2 \).
+  2. For the function \( h(x) = 2x^2 - 5x + 3 \), find the output when \( x = -1 \).

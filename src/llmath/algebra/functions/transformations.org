@@ -1,0 +1,102 @@
+#+TITLE: Algebra - Functions and Transformations
+#+OPTIONS: toc:nil num:nil ^:nil -:nil f:nil *:t <:nil
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{graphicx}
+#+PROPERTY: header-args:R :results output graphics :exports both :session *R* :cache yes :noweb yes
+
+#+BEGIN_COMMENT
+This page is buggy
+#+END_COMMENT
+
+* Functions and Their Transformations
+
+Functions are one of the key concepts in algebra, particularly useful in modeling relationships between variables. Transformations of functions involve changing their appearance in terms of their position, shape, and size.
+
+** Basic Transformation Types
+- Translation
+- Stretching and Compressing
+- Reflection
+- Rotation (less common in basic algebra)
+
+** Translation
+
+Translation moves the graph of the function without changing its shape. It involves shifting the function's graph horizontally, vertically, or both.
+
+Let \( f(x) \) be a function. A translation of \( f(x) \) can be represented as \( g(x) = f(x - h) + k \) where \( h \) and \( k \) are constants representing horizontal and vertical shifts, respectively.
+
+** Example: Horizontal and Vertical Shifts
+
+- Horizontal Shift: \( g(x) = f(x - h) \)
+- Vertical Shift: \( g(x) = f(x) + k \)
+
+#+BEGIN_SRC R :file transformations.png
+  library(ggplot2)
+  x <- seq(-10, 10, by = 0.1)
+  f <- function(x) x^2
+  g <- function(x) (x - 2)^2 + 3
+
+  df <- data.frame(x = x, Original = f(x), Translated = g(x))
+
+  ggplot(df) +
+    geom_line(aes(x = x, y = Original, color = "Original")) +
+    geom_line(aes(x = x, y = Translated, color = "Translated")) +
+    labs(title = "Function Translation", x = "x", y = "y") +
+    theme_minimal() +
+    scale_color_manual(values = c("blue", "red"))
+#+END_SRC
+
+#+RESULTS:
+
+file:transformations.png
+
+** Stretching and Compressing
+
+Stretching or compressing a function alters its steepness or width. This is achieved by multiplying the function by a factor.
+
+A stretched or compressed function \( g(x) \) of \( f(x) \) can be written as \( g(x) = a \cdot f(x) \) where \( a \) is a constant. If \( |a| > 1 \), the function is stretched. If \( |a| < 1 \), it is compressed.
+
+** Example: Stretching a Function
+
+#+BEGIN_SRC R :file transformations_stretching.png
+  h <- function(x) 2 * f(x) # Stretching the function by a factor of 2
+  df$Stretched <- h(x)
+
+  ggplot(df) +
+    geom_line(aes(x = x, y = Original, color = "Original")) +
+    geom_line(aes(x = x, y = Stretched, color = "Stretched")) +
+    labs(title = "Function Stretching", x = "x", y = "y") +
+    theme_minimal() +
+    scale_color_manual(values = c("blue", "green"))
+#+END_SRC
+
+#+RESULTS:
+file:transformations_stretching.png
+
+** Reflection
+
+Reflection flips the function over a given line, such as the x-axis or y-axis.
+
+A reflection of \( f(x) \) over the x-axis is given by \( g(x) = -f(x) \), and over the y-axis by \( g(x) = f(-x) \).
+
+** Example: Reflection Over the X-Axis
+
+#+BEGIN_SRC R :file transformations_x.png
+  i <- function(x) -f(x) # Reflecting over the x-axis
+  df$Reflected <- i(x)
+
+  ggplot(df) +
+    geom_line(aes(x = x, y = Original, color = "Original")) +
+    geom_line(aes(x = x, y = Reflected, color = "Reflected")) +
+    labs(title = "Function Reflection", x = "x", y = "y") +
+    theme_minimal() +
+    scale_color_manual(values = c("blue", "purple"))
+#+END_SRC
+
+#+RESULTS:
+
+file:transformations_x.png
+
+** Conclusion
+
+Understanding and applying these transformations can greatly aid in visualizing and interpreting the behavior of functions, which is essential in various fields including data analysis and AI.
+

@@ -1,4 +1,5 @@
 llmath
+llmath:r
 llmath:algebra
 llmath:algebra:concepts
 llmath:algebra:concepts:variables
@@ -17,7 +18,7 @@ llmath:algebra:equations:multi-step-equations
 llmath:algebra:equations:equation-systems
 llmath:algebra:functions
 llmath:algebra:functions:definition-and-evaluation
-llmath:algebra-functions:domain-and-range
+llmath:algebra:functions:domain-and-range
 llmath:algebra:functions:types-and-properties
 llmath:algebra:functions:graphing
 llmath:algebra:functions:transformations

@@ -39,7 +39,7 @@ cat("The solution is x =", solution[1], "and y =", solution[2], "\n")
 #+RESULTS:
 : The solution is x = 0 and y = 10
 
-* Practice Problems
+* Practice
 1. Solve the following system of equations using any method:
    - \( 3x - y = 7 \)
    - \( 2x + 4y = -8 \)

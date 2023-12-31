@@ -1,0 +1,52 @@
+#+TITLE: Understanding the Domain and Range of Functions
+
+In this document, we will explore the concepts of domain and range in the context of algebraic functions.
+
+* Domain and Range of a Function
+  - /Domain/: The set of all possible input values (usually 'x') which the function can accept.
+  - /Range/: The set of all possible output values (usually 'f(x)') that the function can produce.
+
+  LaTeX notations:
+  - Domain: \( D(f) \)
+  - Range: \( R(f) \)
+
+* Example 1: Linear Function
+  Consider a simple linear function \( f(x) = 2x + 3 \).
+
+** Domain
+     - The domain of a linear function is all real numbers, as there are no restrictions on the value of 'x'.
+     - \( D(f) = \{x \in \mathbb{R}\} \)
+
+** Range
+     - The range is also all real numbers because a linear function can produce any real value as output.
+     - \( R(f) = \{f(x) \in \mathbb{R}\} \)
+
+** R Code Example
+     #+BEGIN_SRC R :exports both :results output
+       f <- function(x) { 2*x + 3 }
+       # Example values
+       x_values <- c(-10, 0, 10)
+       y_values <- sapply(x_values, f)
+       print(y_values)
+     #+END_SRC
+
+* Example 2: Quadratic Function
+  Consider a quadratic function \( f(x) = x^2 - 4 \).
+
+** Domain
+     - Similar to a linear function, the domain of a quadratic function is all real numbers.
+     - \( D(f) = \{x \in \mathbb{R}\} \)
+
+** Range
+     - The range of this quadratic function is all real numbers greater than or equal to -4, since the lowest value of \( f(x) \) is -4 (when \( x = 0 \)).
+     - \( R(f) = \{f(x) \in \mathbb{R} | f(x) \geq -4\} \)
+
+** R Code Example
+     #+BEGIN_SRC R :exports both :results output
+       f <- function(x) { x^2 - 4 }
+       # Example values
+       x_values <- c(-3, 0, 3)
+       y_values <- sapply(x_values, f)
+       print(y_values)
+     #+END_SRC
+

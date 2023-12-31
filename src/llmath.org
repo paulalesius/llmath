@@ -1,4 +1,5 @@
 [[file:llmath.org][llmath]]
+	[[file:llmath/r.org][r]]
 	algebra
 		concepts
 			[[file:llmath/algebra/concepts/variables.org][variables]]
@@ -16,12 +17,12 @@
 			[[file:llmath/algebra/equations/multi-step-equations.org][multi-step-equations]]
 			[[file:llmath/algebra/equations/equation-systems.org][equation-systems]]
 		functions
-			definition-and-evaluation
-		domain-and-range
-			types-and-properties
-			graphing
-			transformations
-			compositions
+			[[file:llmath/algebra/functions/definition-and-evaluation.org][definition-and-evaluation]]
+			[[file:llmath/algebra/functions/domain-and-range.org][domain-and-range]]
+			[[file:llmath/algebra/functions/types-and-properties.org][types-and-properties]]
+			[[file:llmath/algebra/functions/graphing.org][graphing]]
+			[[file:llmath/algebra/functions/transformations.org][transformations]]
+			[[file:llmath/algebra/functions/compositions.org][compositions]]
 		inequalities
 			solving-simple-inequalities
 			graphing-inequalities
