@@ -11,10 +11,10 @@
 			[[file:llmath/algebra/concepts/division.org][division]]
 			[[file:llmath/algebra/concepts/pemdas.org][pemdas]]
 		equations
-			simple-equations
-			balancing-and-simplifying
-			multi-step-equations
-			equation-systems
+			[[file:llmath/algebra/equations/simple-equations.org][simple-equations]]
+			[[file:llmath/algebra/equations/balancing-and-simplifying.org][balancing-and-simplifying]]
+			[[file:llmath/algebra/equations/multi-step-equations.org][multi-step-equations]]
+			[[file:llmath/algebra/equations/equation-systems.org][equation-systems]]
 		functions
 			definition-and-evaluation
 		domain-and-range

@@ -1,0 +1,47 @@
+#+TITLE: Understanding Simple Equations in Algebra
+
+* Introduction
+  Understanding simple equations is a fundamental aspect of algebra. This document aims to introduce the concepts of simple equations, demonstrate how to solve them, and provide practical examples using the R programming language.
+
+* Simple Equations: Definition and Examples
+  A simple equation is a mathematical statement that asserts the equality of two expressions. These equations typically involve a variable, which we solve for.
+
+  #+BEGIN_LATEX
+  A simple linear equation: \( ax + b = 0 \)
+  #+END_LATEX
+
+  Where \(a\) and \(b\) are constants, and \(x\) is the variable.
+
+* Solving Simple Equations
+  The goal is to isolate the variable (usually \(x\)) on one side of the equation. This involves applying inverse operations to both sides of the equation to keep the equation balanced.
+
+** Addition and Subtraction
+To get rid of a number added to \(x\), we subtract the same number from both sides of the equation.
+
+** Multiplication and Division
+If \(x\) is multiplied by a number, we divide both sides of the equation by that number.
+
+* Examples in R Programming
+  We can use R to solve simple equations. Below are examples demonstrating this.
+
+** Example 1: Solving \( 2x + 3 = 7 \)
+     #+BEGIN_SRC R
+       # Define the equation
+       solve_equation <- function(a, b, c) {
+         (c - b) / a
+       }
+
+       # Solve 2x + 3 = 7
+       solve_equation(2, 3, 7)
+     #+END_SRC
+
+     #+RESULTS:
+     : 2
+
+** Example 2: Solving \( 5x - 4 = 16 \)
+
+     #+BEGIN_SRC R
+       # Solve 5x - 4 = 16
+       solve_equation(5, -4, 16)
+     #+END_SRC
+

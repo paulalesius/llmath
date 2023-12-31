@@ -1,0 +1,20 @@
+#+TITLE: Multi-Step Equations
+
+* Introduction to Multi-Step Equations
+Multi-step equations are algebraic equations that require more than one step to solve. These types of equations often involve multiple operations, such as addition, subtraction, multiplication, and division.
+
+** Key Concepts
+   - Balancing the equation: What you do to one side of the equation, you must do to the other.
+   - Order of operations: Follow PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction) rules.
+   - Isolating the variable: The goal is to get the variable on one side of the equation.
+
+* Solving Multi-Step Equations
+
+@TODO: multiple detailed explanations step-by-step
+
+* Practice Problems
+Solve the following equations:
+
+1. \( 4x - 7 = 21 \)
+2. \( 5(x + 3) = 2x + 20 \)
+3. \( 3x/2 - 6 = 9 \)
