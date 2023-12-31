@@ -1,0 +1,43 @@
+#+title: Solving Simple Inequalities
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+
+* Introduction
+  Inequalities are mathematical expressions involving the symbols > (greater than), < (less than), \(\geq\) (greater than or equal to), and \(\leq\) (less than or equal to). Unlike equations, inequalities do not show equality but rather a relation of greater or lesser value. In this document, we will explore how to solve simple inequalities.
+
+* Basic Concepts
+** What are Inequalities?
+   Inequalities are statements about the relative size or order of two objects. They are used to compare numbers and expressions. For example, \(x > 3\) means that \(x\) is greater than 3.
+
+** Types of Inequalities
+   - Greater than: \(x > a\)
+   - Less than: \(x < a\)
+   - Greater than or equal to: \(x \geq a\)
+   - Less than or equal to: \(x \leq a\)
+
+* Solving Simple Inequalities
+** General Rules
+   - You can add, subtract, multiply, or divide both sides of an inequality by the same positive number without changing the inequality.
+   - If you multiply or divide both sides by a negative number, reverse the inequality sign.
+   - Treat the inequality as an equation to find critical values, but remember the solution will be a range.
+
+** Examples
+   #+BEGIN_SRC R :exports both :file solving-inequalities-plot.png
+   # Example 1: Solve x > 5
+   x <- seq(-10, 10, by = 0.1)
+   y <- x > 5
+   plot(x, y, type = 'l', main = "Graph of x > 5")
+   #+END_SRC
+
+   #+RESULTS:
+
+   In this example, the solution is all values of \(x\) greater than 5. The graph shows this as a line where values turn true after \(x = 5\).
+
+* Practice Problems
+** Solve the following inequalities:
+   - \(3x + 2 > 8\)
+   - \(5 - x \leq 2\)
+   - \(2x - 7 \geq -3\)
+   - \(-3x + 4 < 1\)
+
+* Conclusion
+  Solving simple inequalities is a fundamental skill in algebra. Understanding and practicing these concepts will help you in more advanced mathematical studies, especially in areas that require analyzing ranges and conditions.

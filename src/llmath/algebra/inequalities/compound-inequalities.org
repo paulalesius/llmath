@@ -1,0 +1,43 @@
+#+title: Compound Inequalities
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+
+Compound inequalities involve combining two inequalities into one statement using the words "and" or "or". Understanding how to solve and graph these inequalities is crucial in algebra.
+
+* Compound Inequalities
+** Definition and Types
+   - A compound inequality contains at least two inequalities joined by "and" (intersection) or "or" (union).
+   - Examples:
+     - "and" compound inequality: \(a < x < b\)
+     - "or" compound inequality: \(x < a\) or \(x > b\)
+
+** Solving "And" Compound Inequalities
+   - To solve: Find the set of values that satisfy both inequalities.
+   - Example: Solve \(3 < x + 2 < 7\)
+     - Subtract 2 from all parts: \(1 < x < 5\)
+
+** Solving "Or" Compound Inequalities
+   - To solve: Find values that satisfy at least one of the inequalities.
+   - Example: Solve \(x \leq -3\) or \(x \geq 4\)
+
+** Graphing Compound Inequalities
+   - "And" inequalities: Graph the intersection of the two inequalities.
+   - "Or" inequalities: Graph the union of the two inequalities.
+
+*** R Example: Graphing "And" Compound Inequalities
+    #+BEGIN_SRC R :exports both :file compound_and_inequality.png
+    plot(NULL, xlim=c(0,10), ylim=c(0,1), xlab="x", ylab="", axes=F)
+    abline(v=3, col="red")
+    abline(v=7, col="blue")
+    segments(3, 0.5, 7, 0.5, col="green", lwd=2)
+    #+END_SRC
+
+*** R Example: Graphing "Or" Compound Inequalities
+    #+BEGIN_SRC R :exports both :file compound_or_inequality.png
+    plot(NULL, xlim=c(-10,10), ylim=c(0,1), xlab="x", ylab="", axes=F)
+    abline(v=-3, col="red")
+    abline(v=4, col="blue")
+    segments(-10, 0.5, -3, 0.5, col="green", lwd=2)
+    segments(4, 0.5, 10, 0.5, col="green", lwd=2)
+    #+END_SRC
+
+Understanding and being able to solve and graph compound inequalities are fundamental skills in algebra. These concepts are not only useful in mathematical problem-solving but also in various applications where conditions can be complex and multi-faceted.

@@ -1,0 +1,40 @@
+#+title: Absolute Value Inequalities
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+
+Absolute value inequalities involve expressions within absolute value symbols and are solved to find the range of values that satisfy the inequality. The absolute value of a number is its distance from zero on the number line, regardless of direction. This concept leads to two different scenarios when solving absolute value inequalities: either the expression inside the absolute value is positive or it's negative.
+
+* The Concept of Absolute Value Inequalities
+  The equation \( |x| = a \) has two solutions: \( x = a \) and \( x = -a \). When this is extended to inequalities, we consider two separate cases for \( |x| < a \) and \( |x| > a \).
+
+  - For \( |x| < a \), the solution is \( -a < x < a \). This represents a range of values.
+  - For \( |x| > a \), the solution is divided into two parts: \( x > a \) or \( x < -a \). This is because the expression inside the absolute value can be either positive or negative.
+
+* Solving Absolute Value Inequalities
+  1. Isolate the absolute value expression.
+  2. Determine the type of inequality: '<' leads to a conjunction (AND), '>' leads to a disjunction (OR).
+  3. Solve the inequality for both the positive and negative scenarios.
+
+* Example: Solving \( |x - 3| < 5 \)
+  - Isolate the absolute value: \( |x - 3| < 5 \).
+  - Since it’s a '<' inequality, use conjunction (AND): \( -5 < x - 3 < 5 \).
+  - Solve for x: \( -2 < x < 8 \).
+
+* R Code Example: Visualizing an Absolute Value Inequality
+  #+BEGIN_SRC R :exports both :file absolute_value_inequality_plot.png
+    library(ggplot2)
+    x_values <- seq(-10, 10, by = 0.1)
+    y_values <- abs(x_values - 3)
+    data <- data.frame(x = x_values, y = y_values)
+    ggplot(data, aes(x = x, y = y)) +
+      geom_line() +
+      geom_hline(yintercept = 5, linetype="dashed") +
+      theme_minimal() +
+      ggtitle("Graph of |x - 3| < 5")
+  #+END_SRC
+
+* Practice Problems
+  - Solve and graph \( |2x + 1| > 3 \).
+  - Solve \( |x - 4| \leq 6 \) and represent the solution on a number line.
+  - For \( |3x - 5| < 7 \), determine the range of values for x.
+
+This section provides a foundational understanding of absolute value inequalities, crucial for many mathematical applications. The combination of theoretical explanation and practical R examples helps to grasp the concept thoroughly.

@@ -1,0 +1,59 @@
+#+title: Logarithmic Properties
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+
+Understanding the properties of logarithms is crucial for simplifying complex logarithmic expressions and solving logarithmic equations.
+
+* Key Properties of Logarithms
+
+The logarithm of a number is the exponent to which a base must be raised to yield that number. For example, in \(\log_b x = y\), \(b^y = x\). The base \(b\) is typically 10 (common logarithm) or \(e\) (natural logarithm).
+
+1. **Product Rule**: \(\log_b(mn) = \log_b m + \log_b n\)
+2. **Quotient Rule**: \(\log_b\left(\frac{m}{n}\right) = \log_b m - \log_b n\)
+3. **Power Rule**: \(\log_b(m^n) = n \cdot \log_b m\)
+4. **Change of Base Formula**: \(\log_b x = \frac{\log_k x}{\log_k b}\) for any base \(k\)
+5. **Logarithm of 1**: \(\log_b 1 = 0\) since \(b^0 = 1\)
+6. **Logarithm of the Base**: \(\log_b b = 1\) since \(b^1 = b\)
+
+* R Code Examples
+
+Let's explore some of these properties with R code examples.
+
+**Product Rule Example**
+#+BEGIN_SRC R
+log2(3*7) # Expected to be log2(3) + log2(7)
+log2(3) + log2(7)
+#+END_SRC
+
+**Quotient Rule Example**
+#+BEGIN_SRC R
+log10(100/20) # Expected to be log10(100) - log10(20)
+log10(100) - log10(20)
+#+END_SRC
+
+**Power Rule Example**
+#+BEGIN_SRC R
+log(8^2, base = 8) # Expected to be 2 * log(8, base = 8)
+2 * log(8, base = 8)
+#+END_SRC
+
+**Change of Base Example**
+#+BEGIN_SRC R
+log(5, base = 2) # Using Change of Base Formula
+log(5) / log(2)
+#+END_SRC
+
+* Visualizing Logarithmic Functions
+
+Visualizing logarithmic functions helps in understanding their behavior.
+
+**Plot of Natural Logarithm Function**
+#+BEGIN_SRC R :exports both :file natural_log_plot.png
+plot(0:10, log(1:11), type='o', col='blue', xlab='x', ylab='ln(x)')
+#+END_SRC
+
+**Plot of Common Logarithm Function**
+#+BEGIN_SRC R :exports both :file common_log_plot.png
+plot(0:10, log10(1:11), type='o', col='red', xlab='x', ylab='log10(x)')
+#+END_SRC
+
+Understanding these properties and being able to visualize logarithmic functions are essential skills in algebra, especially for applications in higher mathematics and computational fields.

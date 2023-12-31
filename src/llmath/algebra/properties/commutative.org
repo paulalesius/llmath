@@ -1,0 +1,40 @@
+#+title: Cummutative
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+
+The commutative property is a fundamental aspect of basic arithmetic and algebra. It states that the order in which two numbers are added or multiplied does not affect the final result. This property is applicable to addition and multiplication, but not to subtraction and division.
+
+* The Commutative Property of Addition
+The commutative property of addition can be written in mathematical terms as:
+\[ a + b = b + a \]
+For example, \( 3 + 5 = 5 + 3 \) which equals 8.
+
+* The Commutative Property of Multiplication
+Similarly, the commutative property of multiplication is:
+\[ a \times b = b \times a \]
+For instance, \( 4 \times 7 = 7 \times 4 \) which equals 28.
+
+These properties are useful in simplifying algebraic expressions and solving equations.
+
+* Examples in R
+
+1. Demonstrating Commutative Property with Addition:
+
+#+BEGIN_SRC R
+a <- 3
+b <- 5
+addition1 <- a + b
+addition2 <- b + a
+addition1 == addition2
+#+END_SRC
+
+2. Demonstrating Commutative Property with Multiplication:
+
+#+BEGIN_SRC R
+c <- 4
+d <- 7
+multiplication1 <- c * d
+multiplication2 <- d * c
+multiplication1 == multiplication2
+#+END_SRC
+
+Understanding the commutative property is essential for learning more complex algebraic concepts and for efficient problem solving.

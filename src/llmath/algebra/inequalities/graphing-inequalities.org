@@ -1,0 +1,45 @@
+#+title: Graphing Inequalities
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+
+Graphing inequalities is an essential part of understanding algebraic concepts. It helps in visualizing the solutions to inequality equations on a number line or coordinate plane. Unlike equations, inequalities do not have just one solution, but rather a range of solutions.
+
+** What are Inequalities?
+
+Inequalities are mathematical expressions involving the symbols < (less than), <= (less than or equal to), > (greater than), or >= (greater than or equal to). These symbols are used to compare two values or expressions. For example, \( x > 5 \) means that x is greater than 5.
+
+** Graphing on a Number Line
+
+Graphing an inequality on a number line gives a visual representation of all its possible solutions.
+
+- To graph \( x > 5 \), we would draw an open circle at 5 and shade the line to the right of 5, indicating all the numbers greater than 5.
+
+#+BEGIN_SRC R :exports both :file graph_number_line.png
+library(ggplot2)
+ggplot(data.frame(x = c(0, 10)), aes(x)) +
+  geom_segment(aes(xend = 10, y = 0, yend = 0)) +
+  geom_point(aes(x = 5, y = 0), shape = 1) +
+  geom_segment(aes(x = 5.1, xend = 10, y = 0, yend = 0), arrow = arrow(type = "open"))
+#+END_SRC
+
+** Graphing on a Coordinate Plane
+
+Inequalities with two variables, like \( y > 2x + 3 \), are graphed on a coordinate plane.
+
+- First, graph the equation \( y = 2x + 3 \) as if it were an equality.
+- Since the inequality is \( y > 2x + 3 \), shade above the line to represent all the points where y is greater than \( 2x + 3 \).
+
+#+BEGIN_SRC R :exports both :file graph_coordinate_plane.png
+library(ggplot2)
+ggplot(data.frame(x = c(-10, 10)), aes(x)) +
+  stat_function(fun = function(x) 2*x + 3) +
+  geom_ribbon(aes(ymin = 2*x + 3, ymax = 10), fill = "blue", alpha = 0.2)
+#+END_SRC
+
+** Practice Problems
+
+Try graphing the following inequalities:
+
+1. \( x <= 4 \) on a number line.
+2. \( y < -x + 2 \) on a coordinate plane.
+
+Graphing inequalities is not just about drawing lines and shading areas; it represents a fundamental understanding of algebra and the solutions to inequalities. Practice is key to mastering this concept.

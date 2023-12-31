@@ -24,16 +24,16 @@
 			[[file:llmath/algebra/functions/transformations.org][transformations]]
 			[[file:llmath/algebra/functions/compositions.org][compositions]]
 		inequalities
-			solving-simple-inequalities
-			graphing-inequalities
-			compound-inequalities
-			absolute-value-inequalities
+			[[file:llmath/algebra/inequalities/solving-simple-inequalities.org][solving-simple-inequalities]]
+			[[file:llmath/algebra/inequalities/graphing-inequalities.org][graphing-inequalities]]
+			[[file:llmath/algebra/inequalities/compound-inequalities.org][compound-inequalities]]
+			[[file:llmath/algebra/inequalities/absolute-value-inequalities.org][absolute-value-inequalities]]
 		properties
-			commutative
-			associative
-			distributive
-			exponents-and-radicals
-			logarithmic-properties
+			[[file:llmath/algebra/properties/commutative.org][commutative]]
+			[[file:llmath/algebra/properties/associative.org][associative]]
+			[[file:llmath/algebra/properties/distributive.org][distributive]]
+			[[file:llmath/algebra/properties/exponents-and-radicals.org][exponents-and-radicals]]
+			[[file:llmath/algebra/properties/logarithmic-properties.org][logarithmic-properties]]
 		factoring
 			common-factors
 			trinomials
