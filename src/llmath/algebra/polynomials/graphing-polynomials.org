@@ -1,0 +1,47 @@
+#+TITLE: Graphing Polynomials
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+
+Polynomials are algebraic expressions made up of constants and variables combined using addition, subtraction, multiplication, and non-negative integer exponents. The process of graphing polynomials is essential in understanding their characteristics such as intercepts, turning points, and end behavior. This document aims to guide you through the basics of polynomial graphing, utilizing the R programming language for practical examples.
+
+* Polynomial Functions
+Polynomials can be represented in the form \( P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0 \), where \( a_n, a_{n-1}, \dots, a_1, a_0 \) are constants and \( n \) is a non-negative integer.
+
+* Characteristics of Polynomial Graphs
+  - **Zeros/Roots**: Points where \( P(x) = 0 \).
+  - **Degree**: The highest exponent of the polynomial. It influences the graph's end behavior and the maximum number of turning points.
+  - **Leading Coefficient**: The coefficient of the term with the highest exponent, affecting the graph's end behavior.
+  - **Y-Intercept**: The point where the graph crosses the y-axis (\( P(0) \)).
+  - **Symmetry**: Polynomials can be symmetric about the y-axis or the origin.
+
+* Graphing a Polynomial Function using R
+  - **Example 1: Quadratic Polynomial**
+    #+BEGIN_SRC R :exports both :file quadratic_plot.png
+    library(ggplot2)
+    x <- seq(-10, 10, by = 0.1)
+    y <- x^2 - 4*x + 3
+    ggplot(data.frame(x, y), aes(x, y)) +
+      geom_line() +
+      ggtitle("Graph of y = x^2 - 4x + 3") +
+      theme_minimal()
+    #+END_SRC
+
+  - **Example 2: Cubic Polynomial**
+    #+BEGIN_SRC R :exports both :file cubic_plot.png
+    x <- seq(-10, 10, by = 0.1)
+    y <- x^3 - 3*x^2 + 2
+    ggplot(data.frame(x, y), aes(x, y)) +
+      geom_line() +
+      ggtitle("Graph of y = x^3 - 3x^2 + 2") +
+      theme_minimal()
+    #+END_SRC
+
+* Interpreting Polynomial Graphs
+  - Analyze the zeros/roots, intercepts, and turning points.
+  - Examine the polynomial's degree and leading coefficient to determine the end behavior.
+  - Look for symmetry and any repeating patterns.
+
+* Challenges and Exercises
+  - Graph different polynomials and observe how changes in coefficients and exponents alter the graph.
+  - Explore the relationship between the polynomial's equation and its graphical representation.
+
+In summary, graphing polynomials is a fundamental skill in algebra that helps in visualizing and understanding the behavior of polynomial functions. Through practice and exploration, one can gain deeper insights into these versatile and widely-used mathematical expressions.

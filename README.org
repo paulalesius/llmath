@@ -12,6 +12,7 @@ This book is designed with beginners in mathematics in mind, especially those wh
 *** Status
 - *Stage:* Early Development
 - *Focus:* Building foundational content
+- *Edition:* 2024
 
 ** Emphasis on R Programming Language
 
