@@ -6,4 +6,4 @@ src = "src"
 title = "Large Language Math - The Mathematics of LLM Foundational Models - For Beginners"
 
 [build]
-build-dir = "docs"
+build-dir = "book"
