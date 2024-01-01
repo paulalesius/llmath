@@ -16,7 +16,7 @@ cat TOC.tpl | while read line; do
     if [ -f "src/$PAGEPATH_ORG" ]; then
         TODO=""
     else
-        TODO=" [TODO]"
+        TODO=" #TODO"
     fi
 
     FORMATTED="[[file:$PAGEPATH_ORG][$PAGENAME$TODO]]"
