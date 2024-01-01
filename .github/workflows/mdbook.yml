@@ -40,7 +40,7 @@ jobs:
       - name: Add Emacs repo
         run: sudo add-apt-repository ppa:ubuntuhandbook1/emacs
       - name: Install Emacs
-        run: sudo apt-get install emacs emacs-common
+        run: sudo apt-get install emacs-nox
       - name: Generate Markdown files
         run: emacs --batch -l src/batch-export.el
       - name: Setup Pages
