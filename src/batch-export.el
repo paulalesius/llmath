@@ -18,8 +18,8 @@
     (let* ((is-block (and (string-prefix-p "$$\n" latex-fragment)
                           (string-suffix-p "\n$$" latex-fragment))))
       (if is-block
-          (concat "\\[" (substring (substring latex-fragment 3) 0 -3) "\\]")
-        (concat "\\(" (substring (substring latex-fragment 1) 0 -1) "\\)")))))
+          (concat "\\\\[" (substring (substring latex-fragment 3) 0 -3) "\\\\]")
+        (concat "\\\\(" (substring (substring latex-fragment 1) 0 -1) "\\\\)")))))
 
 (add-to-list 'org-export-filter-latex-fragment-functions
              'my-md-export-latex-fragments)
