@@ -1,8 +1,6 @@
 (require 'org)
 (require 'ox-md)
 
-(setq org-export-with-latex 'verbatim)
-
 (defun find-org-files (dir)
   "Recursively find .org files in DIR."
   (let (org-files)
