@@ -1,0 +1,53 @@
+#+title: Introduction
+#+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
+#+QA: low, sessions don't work, it keeps asking for tangle dir
+
+Polynomials are one of the most fundamental concepts in algebra. A polynomial is an expression consisting of variables (also known as indeterminates) and coefficients, that involves only the operations of addition, subtraction, multiplication, and non-negative integer exponentiation of variables. An example of a polynomial is \( x^2 - 4x + 7 \).
+
+* Polynomials: Definition and Basic Concepts
+A polynomial can be expressed in the form:
+\[ P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_2 x^2 + a_1 x + a_0 \]
+where \( n \) is a non-negative integer and \( a_0, a_1, \dots, a_n \) are constants known as coefficients. The degree of the polynomial is the highest power of \( x \) that occurs in the polynomial.
+
+** Representation in R
+#+BEGIN_SRC R :exports none :file introduction_representation.png
+# Define a polynomial function
+polynomial <- function(x) {
+    # Coefficients
+    a0 <- 7
+    a1 <- -4
+    a2 <- 1
+    # Polynomial expression
+    a2 * x^2 + a1 * x + a0
+}
+
+# Evaluate the polynomial at x = 2
+polynomial(2)
+#+END_SRC
+
+* Visualizing Polynomials
+Understanding the shape and behavior of polynomial graphs is crucial. The degree of the polynomial often determines the general shape of the graph.
+
+** Polynomial Graph Example
+#+BEGIN_SRC R :exports both :file introduction_graph.png
+library(ggplot2)
+
+# Create a sequence of x values
+x_values <- seq(-10, 10, by = 0.1)
+
+
+# Evaluate the polynomial for each x value
+y_values <- sapply(x_values, polynomial)
+
+# Create a data frame for plotting
+data <- data.frame(x = x_values, y = y_values)
+
+# Plot the graph
+ggplot(data, aes(x, y)) + geom_line() +
+    labs(title = "Graph of a Polynomial", x = "x", y = "P(x)") +
+    theme_minimal()
+#+END_SRC
+
+Polynomials are used in a wide range of mathematical and real-world applications, including curve fitting, calculus, and numerical analysis. They are particularly important in fields such as engineering, physics, economics, and, of course, mathematics.
+
+In the subsequent sections, we will explore operations on polynomials, factoring techniques, solving polynomial equations, and graphing polynomials in greater detail.

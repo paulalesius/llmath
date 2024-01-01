@@ -3,3 +3,5 @@ book
 *.html
 src/llmath/**/*.png
 src/**/*.pdf
+notes.txt
+src/**/*.md

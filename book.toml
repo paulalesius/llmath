@@ -1,0 +1,6 @@
+[book]
+authors = ["Paul Alesius"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Large Language Math"
