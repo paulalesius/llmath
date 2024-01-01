@@ -13,11 +13,13 @@ cat TOC.tpl | while read line; do
 
     PAGEPATH_ORG="$(echo $line | sed 's/:/\//g').org";
 
-    #if [ -f "src/$PAGEPATH_ORG" ]; then
-        FORMATTED="[[file:$PAGEPATH_ORG][$PAGENAME]]"
-    #else
-    #    FORMATTED=$PAGENAME
-    #fi
+    if [ -f "src/$PAGEPATH_ORG" ]; then
+        TODO=""
+    else
+        TODO=" [TODO]"
+    fi
+
+    FORMATTED="[[file:$PAGEPATH_ORG][$PAGENAME$TODO]]"
 
     INDENT=$(for i in $(seq 1 $ITEM_LEN); do echo -n -e "\t"; done)
     echo "$INDENT- $FORMATTED";
