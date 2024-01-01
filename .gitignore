@@ -1,8 +1,9 @@
 book
 *.old
 *.html
-src/llmath/**/*.png
+src/**/*.png
 src/**/*.pdf
+src/**/*.tex
 notes.txt
 src/**/*.md
 docs

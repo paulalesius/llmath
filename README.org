@@ -14,6 +14,10 @@ This book is designed with beginners in mathematics in mind, especially those wh
 - *Focus:* Building foundational content
 - *Edition:* 2024
 
+*** Availability
+- *HTML*: https://paulalesius.github.io/llmath/
+- *PDF*: #[TODO]
+
 ** Emphasis on R Programming Language
 
 Our journey will primarily utilize the R programming language as our tool for executing and understanding mathematical concepts. R is renowned for its powerful capabilities in statistical computing and graphics, making it an ideal choice for exploring the mathematics of Large Language Models (LLMs).
