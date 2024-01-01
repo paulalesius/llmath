@@ -7,3 +7,6 @@ title = "Large Language Math - The Mathematics of LLM Foundational Models - For 
 
 [build]
 build-dir = "book"
+
+[output.html]
+mathjax-support = true
