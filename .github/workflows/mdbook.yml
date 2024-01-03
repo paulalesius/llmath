@@ -48,6 +48,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+      - name: Check before build
+        run: pwd && ls -al
       - name: Build with mdBook
         run: mdbook build -d "."
       - name: Upload artifact
