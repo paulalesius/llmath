@@ -51,11 +51,11 @@ jobs:
       - name: Check before build
         run: pwd && ls -al
       - name: Build with mdBook
-        run: mdbook build -d "."
+        run: mdbook build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./
+          path: ./book
 
   # Deployment job
   deploy:

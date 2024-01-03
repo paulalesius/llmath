@@ -6,6 +6,7 @@ src = "src"
 title = "Large Language Math - The Mathematics of LLM Foundational Models - For Beginners"
 
 [build]
+# Careful calling mdbook with "mdbook -d <path>" as it will delete the path
 build-dir = "book"
 
 [output.html]
