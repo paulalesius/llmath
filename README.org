@@ -15,7 +15,7 @@ This book is designed with beginners in mathematics in mind, especially those wh
 - *Edition:* 2024
 
 *** Availability
-- *HTML*: https://paulalesius.github.io/llmath/
+- *HTML*: https://llmath.unnservice.com/
 - *PDF*: #[TODO]
 
 ** Emphasis on R Programming Language
