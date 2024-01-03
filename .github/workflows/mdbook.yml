@@ -44,7 +44,7 @@ jobs:
       - name: Install Emacs
         run: sudo apt-get install emacs-nox
       - name: Generate Markdown files
-        run: emacs --batch -l src/batch-export.el
+        run: emacs --batch -l batch.el md
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
