@@ -10,4 +10,4 @@ build-dir = "book"
 
 [output.html]
 mathjax-support = true
-theme = "./theme"
+theme = "theme"

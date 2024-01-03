@@ -1,10 +1,10 @@
-book
-*.old
-*.html
+src/**/*.old
+src/**/*.html
 src/**/*.png
 src/**/*.pdf
 src/**/*.tex
-notes.txt
 src/**/*.md
+notes.txt
+book
 docs
 README.md
