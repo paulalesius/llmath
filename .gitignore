@@ -1,6 +1,7 @@
 src/**/*.old
 src/**/*.html
 src/**/*.png
+!src/cover.png
 !src/banner*.png
 src/**/*.pdf
 src/**/*.tex
