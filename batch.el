@@ -46,7 +46,9 @@
                       (split-string (buffer-string) "\n" t)))
          toc-items)
     (with-temp-file summary-org-path
-      (insert "* Summary\n")
+      ;; Inserting a headline creates a TOC in the Org export to Markdown, which
+      ;; makes the resulting SUMMARY.md incompatible with mdbook.
+      ;;(insert "* Summary\n")
       (dolist (line toc-lines)
         (let* ((items (split-string line ":"))
                (item-len (1- (length items)))
