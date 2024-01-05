@@ -1,3 +1,24 @@
+;;; batch.el --- Description -*- lexical-binding: t; -*-
+;;
+;; Copyright (C) 2024 Paul Alesius
+;;
+;; Author: Paul Alesius <paul@unnservice.com>
+;; Maintainer: Paul Alesius <paul@unnservice.com>
+;; Created: January 05, 2024
+;; Modified: January 05, 2024
+;; Version: 0.0.1
+;; Keywords: Symbol’s value as variable is void: finder-known-keywords
+;; Homepage: https://github.com/noname/something
+;; Package-Requires: ((emacs "24.3"))
+;;
+;; This file is not part of GNU Emacs.
+;;
+;;; Commentary:
+;;
+;;  Description
+;;
+;;; Code:
+
 (require 'org)
 (require 'ox-md)
 
@@ -72,3 +93,7 @@
       (export-src))))
 
 (main)
+
+
+(provide 'something)
+;;; batch.el ends here

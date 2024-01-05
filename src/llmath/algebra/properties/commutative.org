@@ -5,7 +5,7 @@ The commutative property is a fundamental aspect of basic arithmetic and algebra
 
 * The Commutative Property of Addition
 The commutative property of addition can be written in mathematical terms as:
-\[ a + b = b + a \]
+\\[ a + b = b + a \\]
 For example, \( 3 + 5 = 5 + 3 \) which equals 8.
 
 * The Commutative Property of Multiplication

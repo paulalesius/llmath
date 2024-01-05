@@ -7,12 +7,12 @@ In mathematical terms, if we have a dividend \( a \) and a divisor \( b \), the 
 
 * Basic Division Operation
 In its simplest form, division can be represented as:
-\[ \frac{a}{b} = c \]
+\\[ \frac{a}{b} = c \\]
 where \( a \) is the dividend, \( b \) is the divisor, and \( c \) is the quotient.
 
 * Division by Zero
 It's important to note that division by zero is undefined. For any number \( a \),
-\[ \frac{a}{0} \]
+\\[ \frac{a}{0} \\]
 is not defined.
 
 * Examples of Division
@@ -40,14 +40,14 @@ print(quotient3)
 
 * Division in Algebraic Expressions
 Division is often seen in algebraic expressions. For example, in the expression
-\[ \frac{x + 2}{y - 3} \]
+\\[ \frac{x + 2}{y - 3} \\]
 \( x \) and \( y \) are variables, and the expression represents the division of the quantity \( x + 2 \) by \( y - 3 \).
 
 * Division Properties
 - Commutative Property: Division is not commutative. That is, \( a \div b \neq b \div a \).
 - Associative Property: Division is not associative. Changing the grouping of the numbers in a division operation changes the result.
 - [[file:../properties/distributive.org][Distributive Property]]: Division distributes over addition and subtraction in the following way:
-  \[ \frac{a \pm b}{c} = \frac{a}{c} \pm \frac{b}{c} \]
+  \\[ \frac{a \pm b}{c} = \frac{a}{c} \pm \frac{b}{c} \\]
 
 * Practice
 - Divide 42 by 7.
@@ -56,24 +56,24 @@ Division is often seen in algebraic expressions. For example, in the expression
 
 This is not a simple division operation but rather an algebraic equation involving division. As the division is the operation of finding the quotient of the dividend by a divisor, you can reverse the division by multiplying by the quotient \( (y - 1) \):
 
-\[ (2y + 4) = 3(y - 1) \]
+\\[ (2y + 4) = 3(y - 1) \\]
 
 Next, we can expand and simplify both sides of the equation with the distributive property of multiplication over division and sibtraction. The distributive property state that for any numbers \( a \), \( b \), and \( c \), the equation \( a(b+c) = ab + ac \) holds true. The distributive property also holds true for subtraction where \( (a(b-c) = ab - ac) \) so that we can distribute \( 3(y - 1) \) over \( 3y - 3 \) to simplify the equation as
 
-\[ 2y + 4 = 3y - 3 \]
+\\[ 2y + 4 = 3y - 3 \\]
 
 Now we can isolate \( y \) by moving all terms involving \( y \) to one side of the equation and the constant terms to the other side
 
-\[ 2y - 3y = -3 - 4 \]
+\\[ 2y - 3y = -3 - 4 \\]
 
 The process of moving terms from one side of the equation to the other without breaking the equation is based on the fundamental principle of equality in algebra. The principle states that if you perform the same operation on both sides of the an equation, the equation remain valid or "balanced".
 
 Simplifying furthe
 
-\[ -y = -7 \]
+\\[ -y = -7 \\]
 
 or finally
 
-\[ y = 7 \]
+\\[ y = 7 \\]
 
 Remember, practice is key to mastering division in algebra.

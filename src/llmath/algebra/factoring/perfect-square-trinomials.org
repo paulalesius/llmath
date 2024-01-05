@@ -1,18 +1,18 @@
 #+title: Perfect Square Trinomials
 #+PROPERTY: header-args:R :cache yes :results output graphics file :exports code :tangle yes
 
-Perfect square trinomials are a form of quadratic expression that can be factored into the square of a binomial. They have a specific pattern: \[a^2 + 2ab + b^2 = (a + b)^2\] or \[a^2 - 2ab + b^2 = (a - b)^2\]. Recognizing these patterns is key to factoring them efficiently.
+Perfect square trinomials are a form of quadratic expression that can be factored into the square of a binomial. They have a specific pattern: \\( a^2 + 2ab + b^2 = (a + b)^2 \\) or \\( a^2 - 2ab + b^2 = (a - b)^2 \\). Recognizing these patterns is key to factoring them efficiently.
 
 * Factoring Perfect Square Trinomials
 A perfect square trinomial is formed by squaring a binomial. It looks like this:
-\[ (x + a)^2 = x^2 + 2ax + a^2 \] or \[ (x - a)^2 = x^2 - 2ax + a^2 \].
+\\( (x + a)^2 = x^2 + 2ax + a^2 \\) or \\( (x - a)^2 = x^2 - 2ax + a^2 \\).
 
 ** Examples
-1. Factor \[ x^2 + 6x + 9 \].
-   \[ x^2 + 6x + 9 = (x + 3)^2 \], because \( 3^2 = 9 \) and \( 2 \cdot x \cdot 3 = 6x \).
+1. Factor \\( x^2 + 6x + 9 \\).
+   \\( x^2 + 6x + 9 = (x + 3)^2 \\), because \\( 3^2 = 9 \\) and \\( 2 \cdot x \cdot 3 = 6x \\).
 
-2. Factor \[ x^2 - 10x + 25 \].
-   \[ x^2 - 10x + 25 = (x - 5)^2 \], because \( 5^2 = 25 \) and \( -2 \cdot x \cdot 5 = -10x \).
+2. Factor \\[ x^2 - 10x + 25 \\].
+   \\( x^2 - 10x + 25 = (x - 5)^2 \\), because \\( 5^2 = 25 \\) and \\( -2 \cdot x \cdot 5 = -10x \\).
 
 ** Checking Our Work with R
 We can use R to verify the factoring of perfect square trinomials.
@@ -31,7 +31,7 @@ f2(2) # Should return 9 (2 - 5)^2
 We can plot a perfect square trinomial to see its parabolic shape, which is characteristic of quadratic functions.
 
 ** Plot Example
-Let's plot \[ x^2 + 6x + 9 \].
+Let's plot \\[ x^2 + 6x + 9 \\].
 
 #+BEGIN_SRC R :exports both :file perfect_square_plot.png
 x <- seq(-10, 10, by = 0.1)

@@ -6,22 +6,22 @@ The acronym PEMDAS helps to remember the order of operations in algebra. It stan
 * Parentheses
 First, perform all operations inside parentheses.
 
-\[ (a + b) \times c \]
+\\[ (a + b) \times c \\]
 
 * Exponents
 Then, solve the exponents (or powers).
 
-\[ a^b \]
+\\[ a^b \\]
 
 * Multiplication and Division
 Next, perform multiplication and division from left to right.
 
-\[ \frac{a \times b}{c} \]
+\\[ \frac{a \times b}{c} \\]
 
 * Addition and Subtraction
 Finally, perform addition and subtraction from left to right.
 
-\[ a + b - c \]
+\\[ a + b - c \\]
 
 * Examples in R
 Let's see some examples of these operations using R programming language.

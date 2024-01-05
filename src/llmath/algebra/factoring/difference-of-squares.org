@@ -3,9 +3,9 @@
 
 The concept of the "Difference of Squares" is a fundamental algebraic technique used in factoring expressions. It is based on the simple identity:
 
-\[
+\\[
 a^2 - b^2 = (a + b)(a - b)
-\]
+\\]
 
 This identity states that the difference between the squares of two numbers, \(a\) and \(b\), can be factored into the product of the sum and the difference of those two numbers.
 
