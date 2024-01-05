@@ -33,6 +33,3 @@ Open your R interpreter. You can do this by running the 'R' command in your term
 #+BEGIN_SRC R
 install.packages("polynom")
 #+END_SRC
-
-* Conclusion
-  With your R environment set up and R libraries installed, you are now ready to embark on a journey of exploring mathematical concepts interactively. This setup will empower you to experiment with and visualize the concepts discussed in this book.
